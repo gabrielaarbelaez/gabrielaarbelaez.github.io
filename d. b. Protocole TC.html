@@ -1,24 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
- 
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocole TCP - SNT</title>
+  
+  <!-- Lien vers la police Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Appliquer la police et le fond jaune clair */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #FFF9C4; /* Jaune clair */
+      margin: 20px;
+      text-align: center;
+    }
+
+    h1, h2, p {
+      margin: 10px 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 20px 0;
+    }
+
+    /* Conteneur des boutons */
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; /* Espacement entre les boutons */
+      margin-top: 20px;
+    }
+
+    /* Style des boutons */
+    .buttons a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #FBC02D; /* Jaune foncé */
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Effet au survol */
+    .buttons a:hover {
+      background-color: #E68900; /* Jaune encore plus foncé */
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
 <body>
   <h1>Mon site de SNT</h1>
-  <h2>Ici est la partie sur l'histoire d'Internet</h2>
+  <h2>Ici est la partie sur le Protocole TCP</h2>
 
+  <img src="https://i.pinimg.com/736x/90/0d/f2/900df24303f7efb703e0368019c2cd02.jpg" alt="Illustration du protocole TCP">
+
+  <p>
+    Le protocole TCP (Transmission Control Protocol) est un protocole de communication essentiel du modèle TCP/IP, garantissant une transmission fiable et ordonnée des données entre deux systèmes sur un réseau. 
+    Fonctionnant en mode connecté, TCP établit une liaison avant d'envoyer des informations grâce à un handshake en trois étapes (SYN, SYN-ACK, ACK).
+  </p>
+  <p>
+    Une fois la connexion établie, les données sont segmentées, numérotées et envoyées avec un accusé de réception (ACK) pour assurer leur bonne réception. En cas de perte ou d'erreur, TCP retransmet les segments concernés. 
+    Il intègre également des mécanismes de contrôle de flux et de contrôle de congestion pour éviter la surcharge du réseau et adapter la transmission au rythme du récepteur.
+  </p>
+  <p>
+    Lorsque la communication est terminée, TCP ferme proprement la connexion via un processus en plusieurs étapes. Grâce à sa fiabilité, TCP est utilisé pour des applications nécessitant une transmission précise des données, 
+    comme la navigation web (HTTP/HTTPS), les e-mails (SMTP, IMAP) et le transfert de fichiers (FTP).
+  </p>
+
+  <div class="buttons">
+    <a href="index.html">Revenir à la page d'accueil</a>
+  </div>
 </body>
 
 </html>
-<img src="http://www.frisechronos.fr/H5PdfFiles/d8fbfe06-f2e7-48b2-99be-c1fe12840012.png">
-
-<p>Internet a été créé en 1969, il y a eu beaucoup d' événements qui ont été très importants pour l’évolution de celle-ci. Maintenant en 2025, on utilise Internet tous les jours tout le temps. 
-Internet qu’on utilise tous les jours a été créé récemment, mais quelle est l’histoire? Les débuts de l’internet ont été dans les années 1960. 
-</p>
- <h2></h2>
-
- <a href="index.html">Revenir à la page d'accueil</a>
