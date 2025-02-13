@@ -10,10 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   
   <style>
-    /* Appliquer la police et le fond jaune clair */
+    /* Appliquer la police et le fond bleu clair */
     body {
       font-family: 'Poppins', sans-serif;
-      background-color: #FFF9C4; /* Jaune clair */
+      background-color: #ADD8E6; /* Bleu clair */
+      color: #00008b; /* Bleu foncé */
       margin: 20px;
       text-align: center;
     }
@@ -22,17 +23,23 @@
       margin: 10px 0;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
       margin: 20px 0;
+    }
+
+    img, iframe {
+      max-width: 45%;
+      height: auto;
     }
 
     /* Conteneur des boutons */
     .buttons {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
       gap: 15px; /* Espacement entre les boutons */
       margin-top: 20px;
     }
@@ -41,7 +48,7 @@
     .buttons a {
       display: inline-block;
       padding: 12px 20px;
-      background-color: #FBC02D; /* Jaune foncé */
+      background-color: #4682b4; /* Bleu pas trop foncé */
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -51,8 +58,26 @@
 
     /* Effet au survol */
     .buttons a:hover {
-      background-color: #E68900; /* Jaune encore plus foncé */
+      background-color: #4169e1; /* Bleu légèrement plus clair au survol */
       transform: scale(1.05);
+    }
+
+    /* Style du bouton d'accueil */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #4682b4; /* Bleu pas trop foncé */
+      color: white;
+      text-decoration: none;
+      border-radius: 50%;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
     }
   </style>
 </head>
@@ -61,7 +86,10 @@
   <h1>Mon site de SNT</h1>
   <h2>Ici est la partie sur l'histoire d'Internet</h2>
 
-  <img src="http://www.frisechronos.fr/H5PdfFiles/d8fbfe06-f2e7-48b2-99be-c1fe12840012.png" alt="Frise historique de l'Internet">
+  <div class="content">
+    <img src="http://www.frisechronos.fr/H5PdfFiles/d8fbfe06-f2e7-48b2-99be-c1fe12840012.png" alt="Frise historique de l'Internet">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
   <p>
     Internet a été créé en 1969, et depuis, de nombreux événements importants ont marqué son évolution. 
@@ -69,9 +97,7 @@
     Les débuts d'Internet remontent aux années 1960.
   </p>
 
-  <div class="buttons">
-    <a href="index.html">Revenir à la page d'accueil</a>
-  </div>
+  <a href="index.html" class="home-button">🏠</a>
 </body>
 
 </html>
