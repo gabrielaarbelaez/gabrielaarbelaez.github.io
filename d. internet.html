@@ -14,6 +14,7 @@
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #ADD8E6; /* Bleu clair */
+      color: #00008b; /* Bleu foncé */
       margin: 20px;
       text-align: center;
     }
@@ -31,8 +32,8 @@
     /* Conteneur des boutons */
     .buttons {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 15px; /* Espacement entre les boutons */
       margin-top: 20px;
     }
@@ -41,7 +42,7 @@
     .buttons a {
       display: inline-block;
       padding: 12px 20px;
-      background-color: #004080; /* Bleu foncé */
+      background-color: #4682b4; /* Bleu pas trop foncé */
       color: white;
       text-decoration: none;
       border-radius: 8px;
@@ -51,8 +52,26 @@
 
     /* Effet au survol */
     .buttons a:hover {
-      background-color: #002d5b; /* Bleu encore plus foncé */
+      background-color: #4169e1; /* Bleu légèrement plus clair au survol */
       transform: scale(1.05);
+    }
+
+    /* Style du bouton d'accueil */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #4682b4; /* Bleu pas trop foncé */
+      color: white;
+      text-decoration: none;
+      border-radius: 50%;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
     }
   </style>
 </head>
@@ -73,8 +92,9 @@
     <a href="d. e. Routage.html">Voir l'explication sur le Routage</a>
     <a href="d. f. Réseau pair à pair.html">Voir l'explication sur le Réseau pair à pair</a>
     <a href="d. g. Conversion décimale à binaire.html">Voir l'explication sur les conversions de décimales à binaires</a>
-    <a href="index.html">Revenir à la page d'accueil</a>
   </div>
+
+  <a href="index.html" class="home-button">🏠</a>
 </body>
 
 </html>
