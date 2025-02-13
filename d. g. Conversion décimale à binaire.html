@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocole TC - SNT</title>
+  
+  <!-- Lien vers la police Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Appliquer la police et le fond bleu clair */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ADD8E6; /* Bleu clair */
+      color: #00008b; /* Bleu foncé */
+      margin: 20px;
+      text-align: center;
+    }
+
+    h1, h2, p {
+      margin: 10px 0;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    img, iframe {
+      max-width: 45%;
+      height: auto;
+    }
+
+    /* Conteneur des boutons */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px; /* Espacement entre les boutons */
+      margin-top: 20px;
+    }
+
+    /* Style des boutons */
+    .buttons a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #4682b4; /* Bleu pas trop foncé */
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Effet au survol */
+    .buttons a:hover {
+      background-color: #4169e1; /* Bleu légèrement plus clair au survol */
+      transform: scale(1.05);
+    }
+
+    /* Style du bouton d'accueil */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      background-color: #4682b4; /* Bleu pas trop foncé */
+      color: white;
+      text-decoration: none;
+      border-radius: 50%;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mon site de SNT</h1>
+  <h2>Ici est la partie sur la Conversion décimale à binaire</h2>
+
+  <div class="content">
+    <img src="https://www.wikihow.com/images_en/thumb/d/d7/Convert-from-Decimal-to-Binary-Step-10-Version-4.jpg/v4-1200px-Convert-from-Decimal-to-Binary-Step-10-Version-4.jpg" alt="Conversion décimal à binaire">
+    <iframe width="560" height="315" src="https://youtu.be/nhLG_Xu87JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <p>
+La conversion d'un nombre décimal en binaire se fait en divisant successivement le nombre par 2 et en notant les restes à chaque étape, jusqu'à ce que le quotient soit nul. Tout d'abord, on divise le nombre décimal par 2 et on note le reste de la division, qui sera soit 0, soit 1. Ensuite, on prend le quotient obtenu comme le nouveau nombre à diviser et on répète l'opération jusqu'à ce que le quotient devient égal à 0. Une fois cette étape terminée, on lit les restes dans l'ordre inverse, c'est-à-dire du dernier reste au premier, pour obtenir la représentation binaire du nombre. Par exemple, pour convertir le nombre décimal 13 en binaire, on commence par diviser 13 par 2, ce qui donne un quotient de 6 et un reste de 1. On poursuit en divisant 6 par 2, ce qui donne un quotient de 3 et un reste de 0, puis on divise 3 par 2, ce qui donne un quotient de 1 et un reste de 1, et enfin, on divise 1 par 2, ce qui donne un quotient de 0 et un reste de 1. En lisant les restes de bas en haut, on obtient 1101, ce qui signifie que 13 en binaire est égal à 1101. Ce processus peut être utilisé pour convertir n'importe quel nombre décimal en binaire.
+  </p>
+  
+  <a href="index.html" class="home-button">🏠</a>
+</body>
+
+</html>
+  </div>
+</body>
+
+</html>
