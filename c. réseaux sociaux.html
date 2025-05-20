@@ -59,6 +59,30 @@
       width: 40px;
       height: 40px;
     }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .button-container a {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #4682b4; /* Bleu pas trop foncé */
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .button-container a:hover {
+      background-color: #4169e1; /* Bleu légèrement plus clair au survol */
+      transform: scale(1.05);
+    }
   </style>
 </head>
 
